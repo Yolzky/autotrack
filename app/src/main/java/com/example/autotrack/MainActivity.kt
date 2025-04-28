@@ -14,17 +14,15 @@ import com.example.autotrack.ui.theme.AutoTrackTheme
 
 class MainActivity : ComponentActivity() {
 
-    private val loginViewModel: LoginViewModel by viewModel()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             AutoTrackTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    val loginViewModel: LoginViewModel = viewModel()
                     LoginScreen(viewModel = loginViewModel)
                 }
             }

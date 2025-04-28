@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.autotrack.feature.auth.components.EmailField
 import com.example.autotrack.feature.auth.components.PasswordField
 import com.example.autotrack.feature.auth.components.RememberMeSection
